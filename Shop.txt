@@ -1,0 +1,18 @@
+
+const firstDiv = document.querySelector("body > div:first-of-type");
+
+const subHeading = document.createElement("h3");
+subHeading.textContent = "Buy high quality organic fruits online";
+subHeading.style.fontStyle = "italic";
+
+const mainHeading = document.querySelector("h1");
+mainHeading.insertAdjacentElement("afterend", subHeading);
+
+const secondDiv = document.querySelector("body > div:nth-of-type(2)");
+
+const paragraph = document.createElement("p");
+paragraph.textContent = "Total fruits: 4";
+paragraph.id = "fruits-total";
+
+const fruitList = secondDiv.querySelector("ul");
+secondDiv.insertBefore(paragraph, fruitList);
